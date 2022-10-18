@@ -35,7 +35,7 @@ function toI18n(str) {
 
 function localizeObject(obj, tag) {
     var msg = toI18n(tag);
-    if (msg != tag) obj.innerHTML = msg;
+    if (msg != tag) obj.innerHTML = DOMPurify.sanitize(msg);
 }
 
 function localizeHtmlPage() {
