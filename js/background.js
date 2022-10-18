@@ -76,7 +76,7 @@ function toast(opts) {
   const content = browser.i18n.getMessage(opts.text, opts.data);
 
   if (opts.icon) {
-    icon = browser.browser.runtime.getURL(opts.icon);
+    icon = browser.runtime.getURL(opts.icon);
   }
 
   let showingToast = browser.notifications.create(opts.id, {
@@ -99,12 +99,12 @@ function toast(opts) {
 
 // Displays a notification with a warning icon.
 function warning(textKey, dataExtra) {
-  return toast({text: textKey, icon: browser.browser.runtime.getURL(ICON_WARNING), timeout: TOAST_TIMEOUT_DEFAULT, data: dataExtra});
+  return toast({text: textKey, icon: browser.runtime.getURL(ICON_WARNING), timeout: TOAST_TIMEOUT_DEFAULT, data: dataExtra});
 }
 
 // Displays a notification with the default application icon.
 function notification(textKey, dataExtra) {
-  return toast({text: textKey, icon: browser.browser.runtime.getURL(ICON_SEND_TO_DEVICE48), timeout: TOAST_TIMEOUT_DEFAULT, data: dataExtra});
+  return toast({text: textKey, icon: browser.runtime.getURL(ICON_SEND_TO_DEVICE48), timeout: TOAST_TIMEOUT_DEFAULT, data: dataExtra});
 }
 
 // Opens the extension setting page.
