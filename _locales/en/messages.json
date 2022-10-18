@@ -1,0 +1,119 @@
+{
+  "extensionName": {
+    "message": "Send2Prowl2",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Adds a notification message with the current page URL to a prowl account.",
+    "description": "Description of the extension."
+  },
+
+  "titleActionSend": {
+    "message": "Send 2 Prowl",
+    "description": "The text shown as the page action title."
+  },
+
+  "apiKeyMissing": {
+    "message": "API Key not set, please set one on the options page before trying to send to prowl!",
+    "description": "Explains that the API key must be set before send to prowl can be used."
+  },
+
+  "urlMissing": {
+    "message": "Tab has no location, can't send to prowl!",
+    "description": "Explains that a blank location isn't useful to send to prowl."
+  },
+
+  "sentSuccess": {
+    "message": "\"$MSG$\" sent to Prowl!",
+    "description": "Tells the user that the message was successfully sent to prowl.",
+    "placeholders": {
+      "msg" : {
+        "content" : "$1",
+        "example" : "The Page Title"
+      }
+    }
+  },
+
+  "sentUnauthorized": {
+    "message": "The Prowl API returned with a result of 'Unauthorized.' Please check your API key and try again.",
+    "description": "The message shown when the prowl api returns a 401."
+  },
+
+  "options_apiKeyLabel": {
+    "message": "API Key",
+    "description": "Text shown in the settings page describing where to get an API key."
+  },
+
+  "options_apiKey": {
+    "message": "If you don't have an API key, get one here <a href=\"https://www.prowlapp.com/api_settings.php\" target=\"_blank\"><button type=\"button\">Prowl API Keys</button></a>",
+    "description": "Text shown in the settings page describing where to get an API key."
+  },
+
+  "options_priorityLabel": {
+    "message": "Prowl message priority",
+    "description": "Text shown in the settings page for the label for priority."
+  },
+
+  "options_priority": {
+    "message": "Default value of Normal (0). Emergency priority messages may bypass quiet hours according to your settings in Prowl.",
+    "description": "Text shown in the settings page describing message priority."
+  },
+
+  "options_priority_n2": {
+    "message": "Very Low (-2)",
+    "description": "Option text for priority: very low. (-2)"
+  },
+
+  "options_priority_n1": {
+    "message": "Moderate (-1)",
+    "description": "Option text for priority: moderate. (-1)"
+  },
+
+  "options_priority_0": {
+    "message": "Normal (0)",
+    "description": "Option text for priority: normal. (0)"
+  },
+
+  "options_priority_1": {
+    "message": "High (1)",
+    "description": "Option text for priority: high. (1)"
+  },
+
+  "options_priority_2": {
+    "message": "Emergency (2)",
+    "description": "Option text for priority: emergency. (2)"
+  },
+
+  "options_save": {
+    "message": "Save Options",
+    "description": "Text shown on the button to save options."
+  },
+
+  "options_sponsor": {
+    "message": "💖 Sponsor",
+    "description": "Text on the options page to link to sponsoring the author."
+  },
+
+  "sentFailure": {
+    "message": "Prowl message failed: $MSG$",
+    "description": "Tells the user what went wrong.",
+    "placeholders": {
+      "msg" : {
+        "content" : "$1",
+        "example" : "<something bad>"
+      }
+    }
+  },
+
+  "sentException": {
+    "message": "Exception occured when trying to call the Prowl API: $MSG$",
+    "description": "Tells the user what went wrong in the case of an exception.",
+    "placeholders": {
+      "msg" : {
+        "content" : "$1",
+        "example" : "<something bad>"
+      }
+    }
+  }
+}

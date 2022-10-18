@@ -1,0 +1,97 @@
+body {
+    color: #212121;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+
+  background-color: #fafafa;
+  width: 600px;
+  margin: 16px;
+  padding: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+  }
+}
+
+button {
+  background-color: #545b62;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px 16px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  margin: 24px auto 0 auto;
+  float: right;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+  background-color: #2357c6;
+}
+
+.textbox {
+  margin: 5px 0px 0 20px;
+}
+
+.textbox > div {
+  margin-bottom: 16px;
+}
+
+input[type="text"] {
+  float:right;
+  border: none;
+  outline: none;
+  padding: 4px;
+
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+select {
+  float:right;
+  border: none;
+  outline: none;
+  padding: 4px;
+
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.disabled {
+  opacity: 50%;
+  pointer-events: none;
+}
+
+label {
+  font-weight: bolder;
+}
+
+.hint {
+  border: 1px solid #30363d;
+  background-color: #161b22;
+  border-radius: 6px;
+  margin: 16px auto 16px auto;
+  padding: 4px;
+  font-size: smaller;
+  display: grid;
+  grid-template-columns: 75% auto;
+  align-items: center;
+}
+
+.hint button {
+  float: right;
+}
+
+.sponsor {
+  background-color: rgb(33, 38, 45);
+  border-color: rgba(240, 246, 252, 0.1);
+  margin-top: 24px;
+}

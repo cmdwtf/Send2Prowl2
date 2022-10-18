@@ -1,0 +1,50 @@
+{
+
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "author": "Chris Marc Dailey (nitz)",
+  "homepage_url": "https://github.com/cmdwtf/send2prowl2",
+
+  "icons": {
+    "16": "icons/extension.svg",
+    "19": "icons/extension.svg",
+    "38": "icons/extension.svg",
+    "48": "icons/extension.svg",
+    "96": "icons/extension.svg",
+    "128": "icons/extension.svg"
+  },
+
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+
+  "page_action": {
+    "default_icon": "icons/send-to-device.svg",
+    "browser_style": true
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{e3847b59-ebfd-4b15-8b74-83465f8ffc3d}"
+    }
+  },
+
+  "options_ui": {
+    "page": "html/options.html"
+  },
+
+
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "notifications",
+    "storage",
+    "tabs",
+    "webRequest",
+    "*://api.prowlapp.com/*"
+  ],
+
+  "default_locale": "en"
+}

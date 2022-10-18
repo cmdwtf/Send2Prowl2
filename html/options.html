@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/options.css" />
+  </head>
+
+  <body>
+    <form>
+      <label data-localize="__MSG_options_apiKeyLabel__" for="apiKey"></label>&nbsp;
+      <input type="text" id="apiKey" name="apiKey"></input>
+      <p data-localize="__MSG_options_apiKey__" class="hint"></p>
+      <label data-localize="__MSG_options_priorityLabel__" for="priority"></label>&nbsp;
+      <select name="priority" id="priority">
+        <option data-localize="__MSG_options_priority_n2__" value="-2"></option>
+        <option data-localize="__MSG_options_priority_n1__" value="-1"></option>
+        <option data-localize="__MSG_options_priority_0__" value="0">)</option>
+        <option data-localize="__MSG_options_priority_1__" value="1"></option>
+        <option data-localize="__MSG_options_priority_2__" value="2"></option>
+      </select>
+      <p data-localize="__MSG_options_priority__" class="hint"></p>
+      <button data-localize="__MSG_options_save__" type="submit"></button>
+      <a href="https://ko-fi.com/cmd" target="_blank">
+        <button data-localize="__MSG_options_sponsor__" class="sponsor" type="button"></button>
+      </a>
+    </form>
+    <script src="/js/options.js"></script>
+    <script src="/js/localize.js"></script>
+  </body>
+</html>
