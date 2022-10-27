@@ -4,7 +4,7 @@
   "name": "__MSG_extensionShortName__",
   "description": "__MSG_extensionDescription__",
   "manifest_version": 2,
-  "version": "1.0.1",
+  "version": "2.0.0",
   "developer": {
     "name": "Chris Marc Dailey (nitz)",
     "url": "https://github.com/cmdwtf/send2prowl2"
