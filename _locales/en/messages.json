@@ -1,5 +1,10 @@
 {
   "extensionName": {
+    "message": "Send 2 Prowl 2",
+    "description": "Name of the extension."
+  },
+
+  "extensionShortName": {
     "message": "Send2Prowl2",
     "description": "Name of the extension."
   },
@@ -10,8 +15,90 @@
   },
 
   "titleActionSend": {
-    "message": "Send 2 Prowl",
+    "message": "Send Page to Prowl",
     "description": "The text shown as the page action title."
+  },
+
+  "contextActionApiKeySet": {
+    "message": "Set Prowl API Key",
+    "description": "The text shown as the context menu action title if the API key is not set."
+  },
+
+  "contextActionSend": {
+    "message": "Send $MSG$ to Prowl",
+    "description": "The text shown as the context menu action title.",
+    "placeholders": {
+      "msg" : {
+        "content" : "$1",
+        "example" : "Link"
+      }
+    }
+  },
+
+  "contextType_audio": {
+    "message": "Audio URL",
+    "description": "The type shown in the context menu when an audio element is what will be sent to prowl."
+  },
+
+  "contextType_bookmark": {
+    "message": "Bookmark",
+    "description": "The type shown in the context menu when a bookmark is what will be sent to prowl."
+  },
+
+  "contextType_frame": {
+    "message": "Frame",
+    "description": "The type shown in the context menu when the current frame is what will be sent to prowl."
+  },
+
+  "contextType_image": {
+    "message": "Image Link",
+    "description": "The type shown in the context menu when an image URL is what will be sent to prowl."
+  },
+
+  "contextType_link": {
+    "message": "Link",
+    "description": "The type shown in the context menu when a URL is what will be sent to prowl."
+  },
+
+  "contextType_page": {
+    "message": "Page",
+    "description": "The type shown in the context menu when the current page is what will be sent to prowl."
+  },
+
+  "contextType_page_action": {
+    "message": "Tab",
+    "description": "The type shown in the context menu when the current tab (via the pageAction) is what will be sent to prowl."
+  },
+
+  "contextType_selection": {
+    "message": "Selected Text",
+    "description": "The type shown in the context menu when selected text is what will be sent to prowl."
+  },
+
+  "contextType_tab": {
+    "message": "Tab",
+    "description": "The type shown in the context menu when the current tab is what will be sent to prowl."
+  },
+
+  "contextType_video": {
+    "message": "Video URL",
+    "description": "The type shown in the context menu when an video element is what will be sent to prowl."
+  },
+
+  "badProtocol": {
+    "message": "Can't send to prowl. This URL's protocol doesn't match the allowed protocol types: [ $TYPES$ ]",
+    "description": "Explains that the protocol of the URL given isn't on the allowed list of protocols.",
+    "placeholders": {
+      "types" : {
+        "content" : "$1",
+        "example" : "http:, https:"
+      }
+    }
+  },
+
+  "unnamedBookmark": {
+    "message": "Unnamed Bookmark",
+    "description": "The text sent as the title of a prowl notification when a bookmark is sent that has no name."
   },
 
   "apiKeyMissing": {

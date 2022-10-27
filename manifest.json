@@ -1,11 +1,14 @@
 {
 
   "name": "__MSG_extensionName__",
+  "name": "__MSG_extensionShortName__",
   "description": "__MSG_extensionDescription__",
   "manifest_version": 2,
   "version": "1.0.1",
-  "author": "Chris Marc Dailey (nitz)",
-  "homepage_url": "https://github.com/cmdwtf/send2prowl2",
+  "developer": {
+    "name": "Chris Marc Dailey (nitz)",
+    "url": "https://github.com/cmdwtf/send2prowl2"
+  },
 
   "icons": {
     "16": "icons/extension.svg",
@@ -37,6 +40,7 @@
 
   "permissions": [
     "activeTab",
+    "bookmarks",
     "contextMenus",
     "notifications",
     "storage",
